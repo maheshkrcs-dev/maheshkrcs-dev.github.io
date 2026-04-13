@@ -10,7 +10,19 @@ body {
     background: linear-gradient(rgba(255,255,255,0.95), rgba(255,255,255,0.95)), 
                 url('https://picsum.photos/id/1015/2000/1200') center/cover no-repeat;
     min-height: 55vh;
-    padding-top: 100px;
+    padding-top: 80px;           /* extra space for fixed navbar */
+}
+
+@media (max-width: 768px) {
+    .hero {
+        min-height: auto;
+        padding-top: 100px;      /* more padding on mobile */
+        padding-bottom: 60px;
+    }
+    
+    .hero h1 {
+        font-size: 2.4rem;
+    }
 }
 
 .section-title {
@@ -74,10 +86,6 @@ section.visible {
     transform: translateY(0);
 }
 
-.mt-4 p {
-    color: green !important;
-}
-
 .card-body h5 {
     color: rgb(21, 5, 23);
     text-decoration: solid;
@@ -86,9 +94,7 @@ section.visible {
     color: rgb(36, 23, 149);
 }
 
-.mb-3 span {
+.mb-3 span { 
     background-color: rgb(236, 230, 238) !important;
     color: black;
 }
-
- 

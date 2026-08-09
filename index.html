@@ -692,152 +692,276 @@
     </div>
   </div>
 </section>
-    <!-- Contact Section -->
-    <section id="contact" class="py-5 bg-light">
-      <div class="container">
-        <h2 class="section-title text-center mb-5">
-          Contact Me
-          <span class="ms-2">
-            <a
-              href="https://wa.me/918210038549"
-              target="_blank"
-              class="ms-2 text-success"
-            >
-              <i class="fab fa-whatsapp"></i>
-            </a>
-          </span>
-        </h2>
+    <!-- Contact -->
+<section id="contact" class="py-5 bg-light">
+  <div class="container">
 
-        <div class="row g-4"></div>
-        <!-- Success Message - Initially Hidden -->
-        <div
-          id="success-message"
-          class="d-none max-w-md mx-auto bg-white border border-success rounded-4 p-5 text-center mb-5 shadow"
+    <h2 class="section-title text-center mb-3">
+      Let's Connect
+    </h2>
+
+    <p class="text-center text-muted mb-5">
+      Have a technical question, collaboration idea, or professional opportunity?
+      Feel free to get in touch.
+    </p>
+
+    <!-- Direct Contact Options -->
+    <div class="row justify-content-center g-3 mb-5">
+
+      <!-- Email -->
+      <div class="col-md-4">
+        <a
+          href="mailto:maheshkr.cs@gmail.com"
+          class="text-decoration-none"
         >
-          <div
-            class="w-20 h-20 mx-auto bg-success bg-opacity-10 rounded-circle flex items-center justify-center mb-4"
-          >
-            <i class="fa-solid fa-check text-5xl text-success"></i>
+          <div class="card h-100 border-success shadow-sm text-center p-3">
+            <i class="fas fa-envelope text-primary fs-3 mb-2"></i>
+            <h6 class="fw-bold mb-1">Email</h6>
+            <small class="text-muted">
+              maheshkr.cs@gmail.com
+            </small>
           </div>
-          <h3 class="h4 fw-semibold text-success mb-3">Thank You!</h3>
-          <p class="text-muted">Your message has been sent successfully.</p>
-          <p class="text-muted small">
-            I'll get back to you as soon as possible.
-          </p>
-          <button
-            onclick="resetForm()"
-            class="mt-4 btn btn-outline-primary px-5 py-2"
-          >
-            Send Another Message
-          </button>
-        </div>
-
-        <!-- Form -->
-        <div class="max-w-md mx-auto border border-success">
-          <form
-            id="contact-form"
-            action="https://api.web3forms.com/submit"
-            method="POST"
-            class="bg-white rounded-4 shadow p-5"
-          >
-            <input
-              type="hidden"
-              name="access_key"
-              value="789ea59b-d890-40ce-afe6-cbce5dd85946"
-            />
-            <input
-              type="hidden"
-              name="subject"
-              value="New Message from Portfolio Website"
-            />
-
-            <div class="mb-4">
-              <label class="form-label">Name</label>
-              <input
-                type="text"
-                name="name"
-                placeholder="Your full name"
-                required
-                class="form-control"
-              />
-            </div>
-
-            <div class="mb-4">
-              <label class="form-label">Email ID</label>
-              <input
-                type="email"
-                name="email"
-                placeholder="@gmail.com"
-                required
-                class="form-control"
-              />
-            </div>
-
-            <div class="mb-4">
-              <label class="form-label">Mobile No (Optional)</label>
-              <input
-                type="tel"
-                name="mobile"
-                placeholder="Your Mobile Number"
-                class="form-control"
-              />
-            </div>
-
-            <div class="mb-4">
-              <label class="form-label">Message</label>
-              <textarea
-                name="message"
-                rows="5"
-                placeholder="Write your message here..."
-                required
-                class="form-control"
-              ></textarea>
-            </div>
-
-            <button
-              type="submit"
-              id="submit-btn"
-              class="btn btn-primary w-100 py-3 fw-semibold"
-            >
-              Send Message
-            </button>
-          </form>
-        </div>
+        </a>
       </div>
-    </section>
 
-    <footer class="py-5 text-center bg-light border-top">
-      <div class="container">
-        <div class="d-flex justify-content-center gap-4 mb-3">
-          <a
-            href="https://linkedin.com/in/maheshkrcs"
-            target="_blank"
-            class="text-dark fs-3"
-            ><i class="fab fa-linkedin"></i
-          ></a>
-          <a
-            href="https://github.com/maheshkrcs-dev"
-            target="_blank"
-            class="text-dark fs-3"
-            ><i class="fab fa-github"></i
-          ></a>
-          <a
-            href="https://huggingface.co/maheshkrcs"
-            target="_blank"
-            class="text-dark fs-3"
-            >🐸</a
-          >
-          <a href="mailto:maheshkr.cs@gmail.com" class="text-dark fs-3"
-            ><i class="fas fa-envelope"></i
-          ></a>
-        </div>
-        <p class="text-muted mb-0">© 2026 Mahesh Kumar • All Rights Reserved</p>
+      <!-- LinkedIn -->
+      <div class="col-md-4">
+        <a
+          href="https://linkedin.com/in/maheshkrcs"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-decoration-none"
+        >
+          <div class="card h-100 border-success shadow-sm text-center p-3">
+            <i class="fab fa-linkedin text-primary fs-3 mb-2"></i>
+            <h6 class="fw-bold mb-1">LinkedIn</h6>
+            <small class="text-muted">
+              Connect with me professionally
+            </small>
+          </div>
+        </a>
       </div>
-    </footer>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+      <!-- WhatsApp -->
+      <div class="col-md-4">
+        <a
+          href="https://wa.me/918210038549"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-decoration-none"
+        >
+          <div class="card h-100 border-success shadow-sm text-center p-3">
+            <i class="fab fa-whatsapp text-success fs-3 mb-2"></i>
+            <h6 class="fw-bold mb-1">WhatsApp</h6>
+            <small class="text-muted">
+              Quick message
+            </small>
+          </div>
+        </a>
+      </div>
 
-    <script src="js/script.js"></script>
-  </body>
+    </div>
+
+    <!-- Success Message - Initially Hidden -->
+    <div
+      id="success-message"
+      class="d-none max-w-md mx-auto bg-white border border-success rounded-4 p-5 text-center mb-5 shadow"
+    >
+      <div
+        class="w-20 h-20 mx-auto bg-success bg-opacity-10 rounded-circle flex items-center justify-center mb-4"
+      >
+        <i class="fa-solid fa-check text-5xl text-success"></i>
+      </div>
+
+      <h3 class="h4 fw-semibold text-success mb-3">
+        Thank You!
+      </h3>
+
+      <p class="text-muted">
+        Your message has been sent successfully.
+      </p>
+
+      <p class="text-muted small">
+        I'll get back to you as soon as possible.
+      </p>
+
+      <button
+        onclick="resetForm()"
+        class="mt-4 btn btn-outline-primary px-5 py-2"
+      >
+        Send Another Message
+      </button>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="max-w-md mx-auto border border-success rounded-4">
+      <form
+        id="contact-form"
+        action="https://api.web3forms.com/submit"
+        method="POST"
+        class="bg-white rounded-4 shadow p-4 p-md-5"
+      >
+
+        <input
+          type="hidden"
+          name="access_key"
+          value="789ea59b-d890-40ce-afe6-cbce5dd85946"
+        />
+
+        <input
+          type="hidden"
+          name="subject"
+          value="New Message from Mahesh Kumar's Portfolio"
+        />
+
+        <!-- Name -->
+        <div class="mb-4">
+          <label class="form-label fw-semibold">
+            Name
+          </label>
+
+          <input
+            type="text"
+            name="name"
+            placeholder="Your full name"
+            required
+            class="form-control"
+          />
+        </div>
+
+        <!-- Email -->
+        <div class="mb-4">
+          <label class="form-label fw-semibold">
+            Email Address
+          </label>
+
+          <input
+            type="email"
+            name="email"
+            placeholder="yourname@gmail.com"
+            required
+            class="form-control"
+          />
+        </div>
+
+        <!-- Mobile -->
+        <div class="mb-4">
+          <label class="form-label fw-semibold">
+            Phone Number <span class="text-muted">(Optional)</span>
+          </label>
+
+          <input
+            type="tel"
+            name="mobile"
+            placeholder="Your phone number"
+            class="form-control"
+          />
+        </div>
+
+        <!-- Message -->
+        <div class="mb-4">
+          <label class="form-label fw-semibold">
+            Message
+          </label>
+
+          <textarea
+            name="message"
+            rows="5"
+            placeholder="Write your message here..."
+            required
+            class="form-control"
+          ></textarea>
+        </div>
+
+        <!-- Submit -->
+        <button
+          type="submit"
+          id="submit-btn"
+          class="btn btn-primary w-100 py-3 fw-semibold"
+        >
+          <i class="fas fa-paper-plane me-2"></i>
+          Send Message
+        </button>
+
+      </form>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="py-5 text-center bg-light border-top">
+
+  <div class="container">
+
+    <h5 class="fw-bold mb-2">
+      Mahesh Kumar
+    </h5>
+
+    <p class="text-muted mb-4">
+      Engineer – Infrastructure Services |
+      IT Infrastructure |
+      End-User Support
+    </p>
+
+    <div class="d-flex justify-content-center gap-4 mb-4">
+
+      <!-- LinkedIn -->
+      <a
+        href="https://linkedin.com/in/maheshkrcs"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="text-dark fs-3"
+        aria-label="LinkedIn"
+      >
+        <i class="fab fa-linkedin"></i>
+      </a>
+
+      <!-- GitHub -->
+      <a
+        href="https://github.com/maheshkrcs-dev"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="text-dark fs-3"
+        aria-label="GitHub"
+      >
+        <i class="fab fa-github"></i>
+      </a>
+
+      <!-- Hugging Face -->
+      <a
+        href="https://huggingface.co/maheshkrcs"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="text-dark fs-3"
+        aria-label="Hugging Face"
+      >
+        🐸
+      </a>
+
+      <!-- Email -->
+      <a
+        href="mailto:maheshkr.cs@gmail.com"
+        class="text-dark fs-3"
+        aria-label="Email"
+      >
+        <i class="fas fa-envelope"></i>
+      </a>
+
+    </div>
+
+    <p class="text-muted small mb-0">
+      © 2026 Mahesh Kumar • All Rights Reserved
+    </p>
+
+  </div>
+
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="js/script.js"></script>
+</body>
 </html>

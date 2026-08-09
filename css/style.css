@@ -3,26 +3,19 @@ body {
 }
 
 .navbar {
-    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
 }
 
 .hero {
-    background: linear-gradient(rgba(255,255,255,0.95), rgba(255,255,255,0.95)), 
-                url('https://picsum.photos/id/1015/2000/1200') center/cover no-repeat;
-    min-height: 55vh;
-    padding-top: 80px;           /* extra space for fixed navbar */
-}
+    background:
+        linear-gradient(
+            rgba(255, 255, 255, 0.95),
+            rgba(255, 255, 255, 0.95)
+        ),
+        url('https://picsum.photos/id/1015/2000/1200') center/cover no-repeat;
 
-@media (max-width: 768px) {
-    .hero {
-        min-height: auto;
-        padding-top: 100px;      /* more padding on mobile */
-        padding-bottom: 60px;
-    }
-    
-    .hero h1 {
-        font-size: 2.4rem;
-    }
+    min-height: 55vh;
+    padding-top: 80px;
 }
 
 .section-title {
@@ -31,7 +24,7 @@ body {
     color: #212529;
 }
 
-.section-title:after {
+.section-title::after {
     content: '';
     position: absolute;
     width: 70px;
@@ -43,18 +36,18 @@ body {
 }
 
 .card {
-    transition: all 0.2s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 20px 25px rgba(0,0,0,0.1);
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
 }
 
-/* Active Nav Link with nice underline */
+/* Navigation */
 #navLinks .nav-link {
     position: relative;
-    transition: all 0.3s ease;
+    transition: color 0.3s ease;
 }
 
 #navLinks .nav-link.active {
@@ -62,7 +55,7 @@ body {
     font-weight: 600;
 }
 
-#navLinks .nav-link.active:after {
+#navLinks .nav-link.active::after {
     content: '';
     position: absolute;
     bottom: -4px;
@@ -74,11 +67,16 @@ body {
     border-radius: 2px;
 }
 
-/* Scroll Animation for Sections */
+/* Section animation */
 section {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+section.animate {
     opacity: 0;
     transform: translateY(40px);
-    transition: all 0.8s ease-out;
 }
 
 section.visible {
@@ -86,15 +84,57 @@ section.visible {
     transform: translateY(0);
 }
 
+/* Card headings */
 .card-body h5 {
     color: rgb(21, 5, 23);
-    text-decoration: solid;
 }
+
+/* Project description */
 .card-body h5 + p {
     color: rgb(36, 23, 149);
 }
 
-.mb-3 span { 
+/* Small badge adjustment */
+.mb-3 span {
     background-color: rgb(236, 230, 238) !important;
     color: black;
+}
+
+/* Profile image */
+.profile-image {
+    max-width: 320px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .hero {
+        min-height: auto;
+        padding-top: 100px;
+        padding-bottom: 60px;
+    }
+
+    .hero h1 {
+        font-size: 2.4rem;
+    }
+
+    .hero h3 {
+        font-size: 1.25rem;
+    }
+
+    .hero p {
+        font-size: 0.95rem;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    #navLinks .nav-link.active::after {
+        display: none;
+    }
 }

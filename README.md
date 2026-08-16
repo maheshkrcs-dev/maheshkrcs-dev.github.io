@@ -8,7 +8,7 @@
 
 I am an Engineer – Infrastructure Services with hands-on experience in enterprise IT support, end-user computing, Windows troubleshooting, asset management, device deployment, and technical support.
 
-Currently, I work at **Neurealm Private Limited**, providing IT support at a client location and handling day-to-day infrastructure and end-user support activities.
+Currently, I work at **Neurealm Private Limited**, providing IT support and handling day-to-day infrastructure and end-user support activities.
 
 My previous experience at **IIT Gandhinagar** and **Bharat Electronics Limited (BEL)** has given me practical exposure to Linux environments, Windows systems, networking, VDI, hardware troubleshooting, and enterprise IT operations.
 
@@ -28,7 +28,7 @@ I am continuously building my skills in **Windows Administration, Active Directo
 ### 🏢 Engineer – Infrastructure Services
 **Neurealm Private Limited**
 
-- Provide end-user IT support at a client location.
+- Provide end-user IT support.
 - Handle incident and service request tickets.
 - Troubleshoot Windows, hardware, software, and peripheral issues.
 - Support laptop and device deployment and workstation setup.

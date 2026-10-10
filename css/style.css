@@ -7,12 +7,7 @@ body {
 }
 
 .hero {
-    background:
-        linear-gradient(
-            rgba(255, 255, 255, 0.95),
-            rgba(255, 255, 255, 0.95)
-        ),
-        url('https://picsum.photos/id/1015/2000/1200') center/cover no-repeat;
+    background: linear-gradient(135deg, #f5f8ff 0%, #ffffff 55%, #edf5ff 100%);
 
     min-height: 55vh;
     padding-top: 80px;
@@ -136,5 +131,44 @@ section.visible {
 
     #navLinks .nav-link.active::after {
         display: none;
+    }
+}
+
+
+/* Portfolio refresh: restrained, consistent project styling */
+.card.border-success,
+.project-card {
+    border: 1px solid #dbe3ef !important;
+    border-radius: 1rem;
+}
+
+.project-card .card-body h3 {
+    color: #172b4d;
+}
+
+.project-card .card-body p,
+.card-body h5 + p {
+    color: #46556b;
+    line-height: 1.7;
+}
+
+.project-card .badge {
+    font-weight: 500;
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid #2563eb;
+    outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
     }
 }

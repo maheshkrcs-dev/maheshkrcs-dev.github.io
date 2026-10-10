@@ -189,3 +189,83 @@ button:focus-visible {
 html {
     scroll-padding-top: 5rem;
 }
+
+
+/* Minimal hero: clear hierarchy, concise copy, and calmer actions */
+.hero {
+    min-height: 58vh;
+    padding-top: 6.5rem;
+    padding-bottom: 4.5rem;
+}
+
+.hero-content {
+    max-width: 960px;
+}
+
+.hero-eyebrow {
+    color: #526581;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+}
+
+.hero h1 {
+    letter-spacing: -0.045em;
+    line-height: 1.08;
+}
+
+.hero-role {
+    color: #0d6efd;
+    font-size: clamp(1.2rem, 2.5vw, 1.7rem);
+}
+
+.hero-summary {
+    max-width: 650px;
+    color: #526078;
+    font-size: clamp(1rem, 1.6vw, 1.15rem);
+    line-height: 1.8;
+}
+
+.hero-actions .btn {
+    border-radius: 0.7rem;
+    font-weight: 600;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hero-actions .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(13, 110, 253, 0.12);
+}
+
+.hero-socials a {
+    color: #526078;
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.hero-socials a:hover {
+    color: #0d6efd;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        min-height: auto;
+        padding-top: 6.5rem;
+        padding-bottom: 4rem;
+    }
+
+    .hero h1 {
+        font-size: clamp(2.5rem, 11vw, 3.5rem);
+    }
+
+    .hero-eyebrow {
+        font-size: 0.68rem;
+        letter-spacing: 0.11em;
+    }
+
+    .hero-summary {
+        max-width: 34rem;
+    }
+}

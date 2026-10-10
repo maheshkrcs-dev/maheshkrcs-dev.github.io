@@ -189,3 +189,43 @@ button:focus-visible {
 html {
     scroll-padding-top: 5rem;
 }
+
+
+/* Prototype 3 — Premium Corporate theme */
+body.theme-corporate { color: #30372f; background: #f7f5ef; font-family: Inter, "Segoe UI", system-ui, sans-serif; }
+.theme-corporate .navbar { background: rgba(247,245,239,.96) !important; border-bottom: 1px solid #e5e0d5; box-shadow: none; backdrop-filter: blur(12px); }
+.theme-corporate .navbar-brand { color: #26372e !important; font-family: Georgia, "Times New Roman", serif; letter-spacing: -.03em; }
+.theme-corporate .navbar .nav-link { color: #515b50; }
+.theme-corporate .navbar .nav-link:hover, .theme-corporate #navLinks .nav-link.active { color: #657b62 !important; }
+.theme-corporate .hero-corporate { min-height: 72vh; padding: 8rem 0 5.5rem !important; background: #f7f5ef; }
+.theme-corporate .hero-eyebrow { color: #657b62; font-size: .72rem; font-weight: 750; letter-spacing: .16em; }
+.theme-corporate .hero-eyebrow span { margin: 0 .5rem; color: #b4a98f; }
+.theme-corporate .hero h1 { color: #27372e; font-family: Georgia, "Times New Roman", serif; font-size: clamp(2.9rem, 5.6vw, 5.3rem); line-height: 1.03; letter-spacing: -.055em; }
+.theme-corporate .hero h2 { color: #657b62; }
+.theme-corporate .hero-summary { max-width: 680px; color: #5f665d; line-height: 1.8; }
+.theme-corporate .hero-tags span { padding: .45rem .8rem; border: 1px solid #d7d9ce; border-radius: 999px; color: #53634f; font-size: .8rem; font-weight: 600; }
+.theme-corporate .btn-dark { background: #293a30; border-color: #293a30; }
+.theme-corporate .btn-dark:hover { background: #415b49; border-color: #415b49; }
+.theme-corporate .btn-outline-dark { color: #293a30; border-color: #a8b3a3; }
+.theme-corporate .btn-outline-dark:hover { background: #e9ece3; color: #293a30; border-color: #657b62; }
+.theme-corporate .hero-profile-note { padding: 2rem; border: 1px solid #dedbce; border-radius: .25rem; background: #eeece3; box-shadow: 12px 12px 0 #e1e2d7; }
+.theme-corporate .note-label { color: #657b62; font-size: .68rem; font-weight: 800; letter-spacing: .15em; }
+.theme-corporate .hero-profile-note h3 { margin: 1.2rem 0 1rem; color: #293a30; font-family: Georgia, "Times New Roman", serif; font-size: 1.8rem; line-height: 1.15; }
+.theme-corporate .hero-profile-note p { color: #60685d; line-height: 1.75; }
+.theme-corporate .hero-profile-note a { color: #52694e; font-weight: 700; text-decoration: none; }
+.theme-corporate .hero-profile-note a:hover { color: #293a30; }
+.theme-corporate section:not(.hero) { padding-top: 5.5rem !important; padding-bottom: 5.5rem !important; }
+.theme-corporate #experience, .theme-corporate #skills, .theme-corporate #education, .theme-corporate #contact, .theme-corporate footer { background: #f0eee7 !important; }
+.theme-corporate .section-title { color: #293a30; font-family: Georgia, "Times New Roman", serif; font-size: 2.3rem; letter-spacing: -.03em; }
+.theme-corporate .section-title::after { background: #8b9a7e; height: 2px; width: 54px; }
+.theme-corporate .card, .theme-corporate .card.border-success, .theme-corporate .project-card { border-color: #e1ded3 !important; border-radius: .35rem; box-shadow: 0 8px 26px rgba(48,55,47,.035); }
+.theme-corporate .card:hover { box-shadow: 0 16px 36px rgba(48,55,47,.09); }
+.theme-corporate .card-body h5, .theme-corporate .project-card .card-body h3 { color: #293a30; }
+.theme-corporate .text-primary { color: #657b62 !important; }
+.theme-corporate .btn-primary { background: #657b62; border-color: #657b62; }
+.theme-corporate .btn-primary:hover { background: #4f654d; border-color: #4f654d; }
+.theme-corporate .badge { letter-spacing: .01em; }
+.theme-corporate .form-control { border-color: #d7d5ca; border-radius: .25rem; }
+.theme-corporate .form-control:focus { border-color: #8b9a7e; box-shadow: 0 0 0 .2rem rgba(101,123,98,.15); }
+.theme-corporate footer { border-color: #dedbce !important; }
+@media (max-width: 768px) { .theme-corporate .hero-corporate { min-height: auto; padding-top: 7rem !important; } .theme-corporate .hero-profile-note { margin-top: .5rem; } }

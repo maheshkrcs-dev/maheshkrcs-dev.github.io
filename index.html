@@ -34,7 +34,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
+  <body class="theme-dark">
     <a class="skip-link" href="#main-content">Skip to main content</a>
     <!-- Navbar -->
     <nav
@@ -82,27 +82,46 @@
     </nav>
 
     <main id="main-content">
-    <!-- Hero -->
-    <section id="home" class="hero py-5 d-flex align-items-center">
-      <div class="container text-center pt-4">
-        <p class="text-muted fw-medium mb-2">Hello, I'm</p>
-        <h1 class="display-3 fw-bold text-dark mb-3">Mahesh Kumar</h1>
-        <h2 class="h3 fw-semibold text-primary mb-3">IT Support &amp; Infrastructure Engineer</h2>
-        <p class="lead mx-auto mb-3" style="max-width: 760px;">
-          Engineer – Infrastructure Services at <strong>Neurealm</strong>, supporting enterprise end users, endpoint deployment, asset operations, and day-to-day IT troubleshooting.
-        </p>
-        <p class="text-muted mx-auto" style="max-width: 760px;">
-          I build practical support tools and document Windows, Linux, networking, and infrastructure projects. Previously at IIT Gandhinagar and Bharat Electronics Limited (BEL).
-        </p>
-        <div class="mt-4 d-flex flex-wrap justify-content-center gap-3">
-          <a href="#projects" class="btn btn-primary px-4">Explore Projects</a>
-          <a href="assets/Resume_Mahesh.pdf" download class="btn btn-outline-primary px-4">Download Resume</a>
-          <a href="https://github.com/maheshkrcs-dev" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark px-4" aria-label="GitHub profile">
-            <i class="fab fa-github me-2" aria-hidden="true"></i>GitHub
-          </a>
-          <a href="https://linkedin.com/in/maheshkrcs" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark px-4" aria-label="LinkedIn profile">
-            <i class="fab fa-linkedin me-2" aria-hidden="true"></i>LinkedIn
-          </a>
+    <!-- Prototype 2: Dark Tech Hero -->
+    <section id="home" class="hero hero-dark py-5 d-flex align-items-center">
+      <div class="container pt-4">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-7">
+            <p class="hero-eyebrow mb-3"><span class="hero-status-dot"></span> IT OPERATIONS &amp; ENDPOINT SUPPORT</p>
+            <h1 class="display-3 fw-bold mb-3">Mahesh Kumar<span class="hero-period">.</span></h1>
+            <h2 class="h3 fw-semibold mb-4">IT Support &amp; Infrastructure Engineer</h2>
+            <p class="lead hero-summary mb-4">
+              Practical support. Reliable systems. Smarter workflows.
+            </p>
+            <p class="hero-detail mb-4">
+              Enterprise end-user support, device deployment, asset operations, and hands-on troubleshooting — backed by practical tools and automation.
+            </p>
+            <div class="d-flex flex-wrap gap-3">
+              <a href="#projects" class="btn btn-primary px-4">View Projects <span aria-hidden="true">↗</span></a>
+              <a href="assets/Resume_Mahesh.pdf" download class="btn btn-outline-light px-4">Download Resume</a>
+            </div>
+            <div class="hero-social-links mt-4 d-flex flex-wrap gap-4">
+              <a href="https://github.com/maheshkrcs-dev" target="_blank" rel="noopener noreferrer"><i class="fab fa-github me-2" aria-hidden="true"></i>GitHub</a>
+              <a href="https://linkedin.com/in/maheshkrcs" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin me-2" aria-hidden="true"></i>LinkedIn</a>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="hero-console" aria-label="Areas of technical focus">
+              <div class="console-top"><span></span><span></span><span></span><small>mahes h / focus-areas</small></div>
+              <div class="console-body">
+                <p class="console-prompt">$ whoami</p>
+                <p class="console-value">IT Support &amp; Infrastructure</p>
+                <p class="console-prompt">$ focus --areas</p>
+                <ul>
+                  <li><span>01</span> Endpoint support</li>
+                  <li><span>02</span> Device deployment</li>
+                  <li><span>03</span> Network troubleshooting</li>
+                  <li><span>04</span> Practical automation</li>
+                </ul>
+                <p class="console-prompt mb-0">$ <span class="console-cursor">_</span></p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

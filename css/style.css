@@ -189,3 +189,21 @@ button:focus-visible {
 html {
     scroll-padding-top: 5rem;
 }
+
+
+/* Prototype 1 — Clean Light theme */
+body.theme-light { color: #263449; background: #ffffff; }
+.theme-light .navbar { background: rgba(255,255,255,.96) !important; backdrop-filter: blur(12px); }
+.theme-light .hero-light { min-height: 68vh; padding: 7.5rem 0 5rem !important; background: radial-gradient(circle at 50% 0%, #e8f1ff 0, #f8fbff 42%, #ffffff 78%); }
+.theme-light .hero-eyebrow { color: #2859a8; font-size: .78rem; font-weight: 750; letter-spacing: .16em; }
+.theme-light .hero h1 { color: #172b4d; letter-spacing: -.045em; }
+.theme-light .hero h2 { color: #2859a8; }
+.theme-light .hero-summary { max-width: 680px; color: #53647b; line-height: 1.8; }
+.theme-light .hero-social-links a { color: #53647b; text-decoration: none; font-weight: 600; }
+.theme-light .hero-social-links a:hover { color: #0d6efd; }
+.theme-light .section-title { color: #172b4d; }
+.theme-light section:not(.hero) { padding-top: 5rem !important; padding-bottom: 5rem !important; }
+.theme-light .card, .theme-light .card.border-success, .theme-light .project-card { border-color: #e2e9f3 !important; box-shadow: 0 8px 26px rgba(28,55,90,.045); }
+.theme-light .card:hover { box-shadow: 0 16px 36px rgba(28,55,90,.10); }
+.theme-light #contact, .theme-light #skills, .theme-light #education, .theme-light footer { background: #f6f8fc !important; }
+@media (max-width: 768px) { .theme-light .hero-light { min-height: auto; padding-top: 7rem !important; } }

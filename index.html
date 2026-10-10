@@ -8,6 +8,16 @@
       content="Mahesh Kumar — IT Support & Infrastructure Engineer focused on endpoint support, asset management, troubleshooting, and practical automation."
     />
     <title>Mahesh Kumar | IT Support &amp; Infrastructure Engineer</title>
+    <meta name="theme-color" content="#f5f8ff" />
+    <link rel="canonical" href="https://maheshkrcs-dev.github.io/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://maheshkrcs-dev.github.io/" />
+    <meta property="og:title" content="Mahesh Kumar | IT Support &amp; Infrastructure Engineer" />
+    <meta property="og:description" content="IT support, endpoint deployment, asset management, troubleshooting, and practical automation." />
+    <meta property="og:image" content="https://maheshkrcs-dev.github.io/assets/profile.jpg" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Mahesh Kumar | IT Support &amp; Infrastructure Engineer" />
+    <meta name="twitter:description" content="IT support, endpoint deployment, asset management, troubleshooting, and practical automation." />
 
     <!-- Bootstrap 5 -->
     <link
@@ -25,6 +35,7 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <!-- Navbar -->
     <nav
       class="navbar navbar-expand-lg fixed-top bg-white shadow-sm"
@@ -39,6 +50,9 @@
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -67,6 +81,7 @@
       </div>
     </nav>
 
+    <main id="main-content">
     <!-- Hero -->
     <section id="home" class="hero py-5 d-flex align-items-center">
       <div class="container text-center pt-4">
@@ -739,11 +754,12 @@
 
         <!-- Name -->
         <div class="mb-4">
-          <label class="form-label fw-semibold">
+          <label for="contact-name" class="form-label fw-semibold">
             Name
           </label>
 
           <input
+            id="contact-name"
             type="text"
             name="name"
             placeholder="Your full name"
@@ -754,11 +770,12 @@
 
         <!-- Email -->
         <div class="mb-4">
-          <label class="form-label fw-semibold">
+          <label for="contact-email" class="form-label fw-semibold">
             Email Address
           </label>
 
           <input
+            id="contact-email"
             type="email"
             name="email"
             placeholder="yourname@gmail.com"
@@ -769,11 +786,12 @@
 
         <!-- Mobile -->
         <div class="mb-4">
-          <label class="form-label fw-semibold">
+          <label for="contact-phone" class="form-label fw-semibold">
             Phone Number <span class="text-muted">(Optional)</span>
           </label>
 
           <input
+            id="contact-phone"
             type="tel"
             name="mobile"
             placeholder="Your phone number"
@@ -783,11 +801,12 @@
 
         <!-- Message -->
         <div class="mb-4">
-          <label class="form-label fw-semibold">
+          <label for="contact-message" class="form-label fw-semibold">
             Message
           </label>
 
           <textarea
+            id="contact-message"
             name="message"
             rows="5"
             placeholder="Write your message here..."
@@ -812,6 +831,8 @@
   </div>
 </section>
 
+
+    </main>
 
 <!-- Footer -->
 <footer class="py-5 text-center bg-light border-top">

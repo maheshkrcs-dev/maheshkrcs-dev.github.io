@@ -89,12 +89,6 @@ section.visible {
     color: rgb(36, 23, 149);
 }
 
-/* Small badge adjustment */
-.mb-3 span {
-    background-color: rgb(236, 230, 238) !important;
-    color: black;
-}
-
 /* Profile image */
 .profile-image {
     max-width: 320px;
@@ -171,4 +165,27 @@ button:focus-visible {
         animation-duration: 0.01ms !important;
         animation-iteration-count: 1 !important;
     }
+}
+
+
+/* Accessibility and navigation polish */
+.skip-link {
+    position: absolute;
+    top: 0.75rem;
+    left: 0.75rem;
+    z-index: 2000;
+    padding: 0.75rem 1rem;
+    background: #ffffff;
+    color: #0b57d0;
+    border: 2px solid #0b57d0;
+    border-radius: 0.5rem;
+    transform: translateY(-160%);
+}
+
+.skip-link:focus {
+    transform: translateY(0);
+}
+
+html {
+    scroll-padding-top: 5rem;
 }

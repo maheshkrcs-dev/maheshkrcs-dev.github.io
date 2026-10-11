@@ -636,7 +636,7 @@
     </h2>
 
     <p class="text-center text-muted mb-4 mx-auto contact-intro">
-      Choose whichever way works best for you — for professional opportunities, a quick message, or a look at my work.
+      Have a question, a project idea, or a professional opportunity? I'd be happy to connect.
     </p>
 
     <!-- Direct Contact and Social Links -->
@@ -647,7 +647,7 @@
         <a href="mailto:maheshkr.cs@gmail.com" class="contact-card">
           <span class="contact-icon contact-icon-email"><i class="fas fa-envelope" aria-hidden="true"></i></span>
           <span class="contact-card-title">Email</span>
-          <span class="contact-card-copy">For work and enquiries</span>
+          <span class="contact-card-copy">For professional enquiries</span>
           <span class="contact-card-action">Send an email <i class="fas fa-arrow-right ms-1" aria-hidden="true"></i></span>
         </a>
       </div>
@@ -657,7 +657,7 @@
         <a href="https://linkedin.com/in/maheshkrcs" target="_blank" rel="noopener noreferrer" class="contact-card">
           <span class="contact-icon contact-icon-linkedin"><i class="fab fa-linkedin-in" aria-hidden="true"></i></span>
           <span class="contact-card-title">LinkedIn</span>
-          <span class="contact-card-copy">Professional networking</span>
+          <span class="contact-card-copy">Connect professionally</span>
           <span class="contact-card-action">View profile <i class="fas fa-arrow-right ms-1" aria-hidden="true"></i></span>
         </a>
       </div>
@@ -667,7 +667,7 @@
         <a href="https://github.com/maheshkrcs-dev" target="_blank" rel="noopener noreferrer" class="contact-card">
           <span class="contact-icon contact-icon-github"><i class="fab fa-github" aria-hidden="true"></i></span>
           <span class="contact-card-title">GitHub</span>
-          <span class="contact-card-copy">Projects and code</span>
+          <span class="contact-card-copy">Explore my IT tools and projects</span>
           <span class="contact-card-action">Explore repositories <i class="fas fa-arrow-right ms-1" aria-hidden="true"></i></span>
         </a>
       </div>
@@ -677,7 +677,7 @@
         <a href="https://wa.me/918210038549" target="_blank" rel="noopener noreferrer" class="contact-card">
           <span class="contact-icon contact-icon-whatsapp"><i class="fab fa-whatsapp" aria-hidden="true"></i></span>
           <span class="contact-card-title">WhatsApp</span>
-          <span class="contact-card-copy">Quick, direct message</span>
+          <span class="contact-card-copy">Send a quick message</span>
           <span class="contact-card-action">Message me <i class="fas fa-arrow-right ms-1" aria-hidden="true"></i></span>
         </a>
       </div>
@@ -686,7 +686,7 @@
 
     <div class="contact-form-heading text-center mb-4">
       <h3 class="h4 fw-bold mb-2">Prefer to send a message?</h3>
-      <p class="text-muted mb-0">Use the form below if you’d rather write a note here.</p>
+      <p class="text-muted mb-0">Tell me a little about what you’d like to discuss.</p>
     </div>
 
     <!-- Success Message - Initially Hidden -->
@@ -773,17 +773,17 @@
           />
         </div>
 
-        <!-- Mobile -->
+        <!-- Subject -->
         <div class="mb-4">
-          <label for="contact-phone" class="form-label fw-semibold">
-            Phone Number <span class="text-muted">(Optional)</span>
+          <label for="contact-subject" class="form-label fw-semibold">
+            Subject
           </label>
-
           <input
-            id="contact-phone"
-            type="tel"
-            name="mobile"
-            placeholder="Your phone number"
+            id="contact-subject"
+            type="text"
+            name="topic"
+            placeholder="e.g. Job opportunity, collaboration, or question"
+            required
             class="form-control"
           />
         </div>
@@ -798,11 +798,14 @@
             id="contact-message"
             name="message"
             rows="5"
-            placeholder="Write your message here..."
+            placeholder="How can I help you?"
             required
             class="form-control"
           ></textarea>
         </div>
+
+        <!-- Form error feedback -->
+        <div id="form-error" class="alert alert-danger d-none mb-3" role="alert" aria-live="polite"></div>
 
         <!-- Submit -->
         <button

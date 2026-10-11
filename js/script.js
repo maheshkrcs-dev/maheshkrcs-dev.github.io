@@ -83,32 +83,44 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 const form = document.getElementById('contact-form');
 const successMessage = document.getElementById('success-message');
 const submitBtn = document.getElementById('submit-btn');
+const formError = document.getElementById('form-error');
 
 form.addEventListener('submit', async function(e) {
     e.preventDefault();
 
     const originalBtnText = submitBtn.innerHTML;
-    submitBtn.innerHTML = `<span class="spinner-border spinner-border-sm me-2" role="status"></span> Sending...`;
+    formError.textContent = '';
+    formError.classList.add('d-none');
+    submitBtn.innerHTML = `<span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span> Sending...`;
     submitBtn.disabled = true;
 
     try {
         const formData = new FormData(form);
-        const response = await fetch(form.action, { 
-            method: 'POST', 
-            body: formData 
+        const response = await fetch(form.action, {
+            method: 'POST',
+            body: formData
         });
 
-        const result = await response.json();
+        let result;
+        try {
+            result = await response.json();
+        } catch {
+            result = null;
+        }
 
-        if (response.ok && result.success === true) {
+        if (response.ok && result && result.success === true) {
             form.reset();
             form.classList.add('d-none');
             successMessage.classList.remove('d-none');
         } else {
-            alert("Submission failed. Please try again.");
+            formError.textContent = result && result.message
+                ? `Your message could not be sent: ${result.message} Please try again, or email me directly.`
+                : 'Your message could not be sent. Please try again, or email me directly.';
+            formError.classList.remove('d-none');
         }
     } catch (error) {
-        alert("Network error. Please try again later.");
+        formError.textContent = 'A network error prevented your message from being sent. Check your connection and try again, or email me directly.';
+        formError.classList.remove('d-none');
     } finally {
         submitBtn.innerHTML = originalBtnText;
         submitBtn.disabled = false;
@@ -118,4 +130,7 @@ form.addEventListener('submit', async function(e) {
 function resetForm() {
     form.classList.remove('d-none');
     successMessage.classList.add('d-none');
+    formError.textContent = '';
+    formError.classList.add('d-none');
+    form.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }

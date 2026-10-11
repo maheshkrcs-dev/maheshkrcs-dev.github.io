@@ -189,3 +189,102 @@ button:focus-visible {
 html {
     scroll-padding-top: 5rem;
 }
+
+
+/* Contact section: clear, consistent ways to connect */
+.contact-intro {
+    max-width: 650px;
+    line-height: 1.7;
+}
+
+.contact-links > div {
+    display: flex;
+}
+
+.contact-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    min-height: 205px;
+    padding: 1.35rem;
+    background: #ffffff;
+    border: 1px solid #dbe3ef;
+    border-radius: 1rem;
+    color: #172b4d;
+    text-decoration: none;
+    box-shadow: 0 4px 16px rgba(20, 40, 80, 0.04);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.contact-card:hover {
+    color: #172b4d;
+    border-color: #9bbcf7;
+    transform: translateY(-4px);
+    box-shadow: 0 14px 28px rgba(20, 40, 80, 0.1);
+}
+
+.contact-card:focus-visible {
+    outline: 3px solid #2563eb;
+    outline-offset: 3px;
+}
+
+.contact-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    margin-bottom: 1rem;
+    border-radius: 0.8rem;
+    font-size: 1.25rem;
+}
+
+.contact-icon-email { background: #eaf2ff; color: #0d6efd; }
+.contact-icon-linkedin { background: #e8f3ff; color: #0a66c2; }
+.contact-icon-github { background: #eef0f4; color: #24292f; }
+.contact-icon-whatsapp { background: #e6f8ed; color: #128c4a; }
+
+.contact-card-title {
+    margin-bottom: 0.25rem;
+    font-weight: 700;
+    font-size: 1.05rem;
+}
+
+.contact-card-copy {
+    color: #66758b;
+    font-size: 0.88rem;
+    line-height: 1.5;
+}
+
+.contact-card-action {
+    margin-top: auto;
+    padding-top: 1rem;
+    color: #0d6efd;
+    font-size: 0.88rem;
+    font-weight: 600;
+}
+
+.contact-form-heading {
+    margin-top: 0.5rem;
+}
+
+#contact .max-w-md {
+    width: 100%;
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 575.98px) {
+    .contact-card {
+        min-height: 185px;
+        padding: 1.1rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .contact-card {
+        transition: none;
+    }
+}

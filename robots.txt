@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://maheshkrcs-dev.github.io/sitemap.xml

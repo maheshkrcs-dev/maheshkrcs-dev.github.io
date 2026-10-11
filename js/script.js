@@ -96,6 +96,10 @@ form.addEventListener('submit', async function(e) {
 
     try {
         const formData = new FormData(form);
+        const messageSubject = formData.get('topic')?.toString().trim();
+        if (messageSubject) {
+            formData.set('subject', `Portfolio enquiry: ${messageSubject}`);
+        }
         const response = await fetch(form.action, {
             method: 'POST',
             body: formData
